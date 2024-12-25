@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="atm-machine">
+        <h1>ATM Machine</h1>
+        <div class="display" id="display"></div>
+        <input type="number" class="input" id="input">
+        <div class="function-keys">
+            <div class="button" id="withdraw-btn" onclick="withdraw()">Cash Withdrawal</div>
+            <div class="button" id="balance-btn" onclick="balanceInquiry()">Balance Inquiry</div>
+            <div class="button" id="deposit-btn" onclick="deposit()">Deposit</div>
+            <div class="button" id="enter-btn" onclick="enter()">Enter</div>
+        </div>
+        <div class="withdraw-amount" id="withdraw-amount" style="display:none;">
+            <input type="number" class="withdraw-input" id="withdraw-input" placeholder="Enter amount">
+            <button onclick="confirmWithdrawal()">Confirm</button>
+            <button onclick="cancelWithdrawal()">Cancel</button>
+        </div>
+        <div class="deposite-amount" id="deposite-amount" style="display:none;">
+            <input type="number" class="deposite-input" id="deposite-input" placeholder="Enter amount">
+            <button onclick="confirmDeposite()">Confirm</button>
+            <button onclick="cancelDeposite()">Cancel</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
